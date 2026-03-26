@@ -1,0 +1,28 @@
+//Used this resource https://roboticsbackend.com/arduino-turn-led-on-and-off-with-button/
+
+int BUTTON_PIN = 2;
+int LED_PIN = 3;
+
+int buttonState = 0;
+int lastButtonState = HIGH;
+bool ledState = false;
+
+void setup() {
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+  buttonState = digitalRead(BUTTON_PIN);
+
+  // detect press
+  if (lastButtonState == HIGH && buttonState == LOW) {
+    ledState = !ledState; // toggle
+  }
+
+  digitalWrite(LED_PIN, ledState);
+
+  lastButtonState = buttonState;
+
+  delay(50); // debounce
+}
