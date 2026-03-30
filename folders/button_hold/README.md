@@ -1,3 +1,4 @@
+---
 # Button Hold Mode  
 #### In this project, the LED will only turn on while holding the button. The moment you let go, it will turn off. It's simple, but it's a great first look at how an Arduino is going to read input and control outputs in real time. 
 ---
@@ -42,3 +43,4 @@ Even though it's set up to use pin 2 for the button and pin 3 for the LED, these
 ```cpp 
 int BUTTON_PIN = 2; //change 2 to the pin you chose for the button
 int LED_PIN = 3; //change 3 to the pin you chose for the led
+---
