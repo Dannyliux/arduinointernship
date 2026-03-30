@@ -23,6 +23,22 @@ void loop() {
   buttonState = digitalRead(BUTTON_PIN);
 
   if (buttonState == LOW) {
-    digitalWrite(
+    digitalWrite(LED_PIN, LOW);
+}
+  else {
+    digitalWrite(LED_PIN, HIGH);
+}
+```
+```loop()``` runs the code over and over forever as long as the Arduino is power up. Every cycle will:
+1. Read the button - is it pressed?
+2. Decides what it will do based on the reading
+3. Control the LED
 
+Why is LOW pressed and HIGH not pressed? Even though it feels backwards, since we used ```INPUT_PULLUP```, the pin usually sits at HIGH. WHen you press the button, it will connect the pin to ground, which pulls it LOW. So ```LOW``` = pressed, ```HIGH``` = not pressed.
 
+### Customizing the Pins
+Even though it's set up to use pin 2 for the button and pin 3 for the LED, these aren't locked. If you wire on different pins, simply update the two lines at the top of the code accordingly:
+
+```cpp 
+int BUTTON_PIN = 2; //change 2 to the pin you chose for the button
+int LED_PIN = 3; //change 3 to the pin you chose for the led
