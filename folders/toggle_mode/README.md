@@ -57,3 +57,16 @@ In this, every cycle the loop will:
 
 #### What is debouncing?
 Physical buttons aren't making clean connections when pressed. They usually bounce quickly, which the Arduino can take in as many presses. So I used the delay(50) to smooth that out
+
+#### What does !ledState do?
+The ```!``` just means the "not" operator. It flips true and false statements to false and true. So everytime we press the button, the LED will switch to whatever state it _wasn't_ before.
+
+---
+
+### Customizing the Pins
+If your wiring uses different pins, just update them at the top:
+```cpp
+int BUTTON_PIN = 2;  // change 2 to whatever pin your button is on
+int LED_PIN = 3;     // change 3 to whatever pin your LED is on
+```
+
