@@ -12,7 +12,8 @@ These two lines will give names to the pins we're using. Pin 2 is where the butt
 void setup() {
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_PIN, OUTPUT);
-} ```
+}
+```
 ```setup()``` will run once when the Arduino turns on. Here is how each pin will be used:
 - ```INPUT_PULLUP``` - the button pin will read the signals coming in. The ```PULLUP``` part keeps the pin at a HIGH state when the button isn't pressed, so readings are reliable. 
 - ```OUTPUT``` - the LED pin will be sending signals out to either turn the LED on or off.
