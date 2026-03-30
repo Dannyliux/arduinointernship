@@ -1,6 +1,6 @@
 # Button Hold Mode  
 In this project, the LED will only turn on while holding the button. The moment you let go, it will turn off. It's simple, but it's a great first look at how an Arduino is going to read input and control outputs in real time. 
-
+---
 ### How the code works:
 ```cpp
 int BUTTON_PIN = 2;
@@ -35,7 +35,7 @@ void loop() {
 3. Control the LED
 
 Why is LOW pressed and HIGH not pressed? Even though it feels backwards, since we used ```INPUT_PULLUP```, the pin usually sits at HIGH. WHen you press the button, it will connect the pin to ground, which pulls it LOW. So ```LOW``` = pressed, ```HIGH``` = not pressed.
-
+---
 ### Customizing the Pins
 Even though it's set up to use pin 2 for the button and pin 3 for the LED, these aren't locked. If you wire on different pins, simply update the two lines at the top of the code accordingly:
 
