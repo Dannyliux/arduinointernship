@@ -18,5 +18,42 @@ bool ledState = false;
 
 We have three variables instead of one. This is the key difference from Holding:
 - ```buttonState``` - the reading fo the button right now.
-- ```lastButtonState``` - what the button was doing in the previous loop```
+- ```lastButtonState``` - what the button was doing in the previous loop
 - ```ledState``` - whether the LED is currently off or on, stores as either ```true``` or ```false```
+Remember the last state because toggling will only happen at the moment the button is pressed, not the entire time we hold it down.
+
+--- 
+
+```cpp
+void setup() {
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(LED_PIN, OUTPUT);
+}
+```
+We will change nothing, the setup is the same as Hold button.
+
+```cpp
+void loop() {
+  buttonState = digitalRead(BUTTON_PIN);
+
+  if (lastButtonState == HIGH && buttonState == LOW) {
+    ledState = !ledState;
+  }
+
+  digitalWrite(LED_PIN, ledState);
+
+  lastButtonState = buttonState;
+
+  delay(50);
+}
+```
+In this, every cycle the loop will:
+1. **Read** the current button state.
+2. **Check** if the button went from not pressed to pressed. This is what ```lastButtonState == HIGH && buttonState == LOW``` is for.
+3. **Flip** the LED state with ```!ledState```. If it was on originally, it will turn off, and vice versa.
+4. **Write** the LED state to the pin
+5. **Save** the current state as ```lastButtonState``` for the next cycle.
+6. **Wait** 50ms to debounce
+
+#### What is debouncing?
+Physical buttons aren't making clean connections when pressed. They usually bounce quickly, which the Arduino can take in as many presses. So I used the delay(50) to smooth that out
