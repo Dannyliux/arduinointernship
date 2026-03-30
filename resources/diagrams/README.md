@@ -15,8 +15,10 @@ This folder holds the wiring diagrams for the Arduino LED and button project.
 ## Diagrams
 ### Arduino Nano
 ![Nano Diagram](nano_circuit.png)
+Step-by-step inside nano_steps
 ### Arduino Uno
 ![UNO Diagram](uno_circuit.png)
+Step-by-step inside uno_steps
 
 ## How the Circuits Work
 The button is connected to the digital input on the Arduino's, and the LED is connected to a digital output. When the button is pressed, the Arduino will read the input signal and control the LEd based on the program that is loaded onto it. 
