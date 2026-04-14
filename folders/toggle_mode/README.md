@@ -17,7 +17,7 @@ bool ledState = false;
 ```
 
 We have three variables instead of one. This is the key difference from Holding:
-- ```buttonState``` - the reading fo the button right now.
+- ```buttonState``` - the reading of the button right now.
 - ```lastButtonState``` - what the button was doing in the previous loop
 - ```ledState``` - whether the LED is currently off or on, stores as either ```true``` or ```false```
 Remember the last state because toggling will only happen at the moment the button is pressed, not the entire time we hold it down.
