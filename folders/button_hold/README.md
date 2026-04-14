@@ -34,13 +34,13 @@ void loop() {
     digitalWrite(LED_PIN, HIGH);
 }
 ```
-```loop()``` runs the code over and over forever as long as the Arduino is power up. Every cycle will:
+```loop()``` runs the code over and over forever as long as the Arduino is powered up. Every cycle will:
 1. Read the button - is it pressed?
 2. Decides what it will do based on the reading
 3. Control the LED
 
 
-Why is LOW pressed and HIGH not pressed? Even though it feels backwards, since we used ```INPUT_PULLUP```, the pin usually sits at HIGH. WHen you press the button, it will connect the pin to ground, which pulls it LOW. So ```LOW``` = pressed, ```HIGH``` = not pressed.
+Why is LOW pressed and HIGH not pressed? Even though it feels backwards, since we used ```INPUT_PULLUP```, the pin usually sits at HIGH. When you press the button, it will connect the pin to ground, which pulls it LOW. So ```LOW``` = pressed, ```HIGH``` = not pressed.
 
 ---
 
