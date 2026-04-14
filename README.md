@@ -12,7 +12,7 @@ An introductory Arduino workshop designed for students with no prior coding or e
 
 By the end of this workshop, students will be able to:
 
-- Identify and connect basic electronic components (LED, push button, jumper wires)
+- Identify and connect basic electronic components (LED, push button, breadboard, jumper wires)
 - Understand the difference between **input** and **output** on a microcontroller
 - Read a button state using `digitalRead()`
 - Control an LED using `digitalWrite()`
