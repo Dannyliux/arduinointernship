@@ -14,7 +14,7 @@ This folder holds the wiring diagrams for the Arduino LED and button project.
 
 ## Diagrams
 ### Arduino Nano
-![Nano Diagram](nano_circuit.png)
+![Nano Diagram](nano_diagram.png)
 Step-by-step inside nano_steps
 ### Arduino Uno
 ![UNO Diagram](uno_circuit.png)
