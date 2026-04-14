@@ -11,9 +11,10 @@ This document lists all the materials needed per student station to complete the
 | 1 | Arduino Nano | 1 | Any version works (Nano v3 recommended) |
 | 2 | Push Button | 1 | Standard 4-leg tactile push button |
 | 3 | LED | 1 | Any color |
-| 4 | Jumper Wire Cables | 5 | Male-to-male recommended for breadboard use |
-| 5 | Computer | 1 | Must have a USB port available |
-| 6 | USB Cable (Micro-USB or Mini-USB) | 1 | Match to your Arduino Nano's port type |
+| 4 | Breadboard | 1 | Mini breadboard recommended for classroom use |
+| 5 | Jumper Wire Cables | 5 | Male-to-male recommended for breadboard use |
+| 6 | Computer | 1 | Must have a USB port available |
+| 7 | USB Cable (Micro-USB or Mini-USB) | 1 | Match to your Arduino Nano's port type |
 
 ---
 
