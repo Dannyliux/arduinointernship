@@ -1,5 +1,5 @@
 # Toggle Mode
-In this project, we will be toggling the LED on and off with te button. Press once--it'll stay on. Press again--it'll turn off. Unlike the Button Hold Project, you don't have to hold anything.
+In this project, we will be toggling the LED on and off with the button. Press once--it'll stay on. Press again--it'll turn off. Unlike the Button Hold Project, you don't have to hold anything.
 The circuit wiring is exactly the same as before. Only the code changes. 
 
 ### How the code works:
