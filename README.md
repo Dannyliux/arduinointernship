@@ -63,6 +63,7 @@ Each student station requires:
 | Arduino Nano | 1 |
 | Push Button | 1 |
 | LED (any color) | 1 |
+| Breadboard | 1 |
 | Jumper Wire Cables | 5 |
 | Computer | 1 |
 | USB Cable | 1 |
