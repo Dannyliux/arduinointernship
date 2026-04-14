@@ -52,7 +52,7 @@ Before students arrive, make sure:
 - [ ] Each Arduino Nano has been tested with a blink sketch
 - [ ] All USB cables support data transfer (not charge-only)
 - [ ] Each station has all components laid out and ready
-- [ ] Wiring diagrams are printed or displayed on screen
+- [ ] Wiring diagrams are printed or ready to be displayed on screen
 
 ---
 
@@ -130,7 +130,7 @@ void setup() {
 
 void loop() {
   // Runs OVER AND OVER FOREVER
-  // This is where the main logic lives
+  // This is where everything happens.
 }
 ```
 
