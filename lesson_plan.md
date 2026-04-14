@@ -37,6 +37,7 @@ See [materials.md](./materials.md) for the full list. Per station:
 | Arduino Nano | 1 |
 | Push Button | 1 |
 | LED (any color) | 1 |
+| Breadboard | 1 |
 | Jumper Wire Cables | 5 |
 | Computer | 1 |
 | USB Cable (Micro or Mini USB) | 1 |
@@ -116,6 +117,7 @@ An Arduino is a small computer that can read inputs (like a button being pressed
 - **Arduino Nano** — The brain. It reads inputs and controls outputs based on your code.
 - **LED** — Light Emitting Diode. It lights up when electricity flows through it in the correct direction. The **longer leg is positive (+)**.
 - **Push Button** — A switch. When pressed, it completes a circuit and sends a signal to the Arduino.
+- **Breadboard** — A board used to build circuits without soldering. Components plug into the holes.
 - **Jumper Wires** — Cables used to connect components together.
 - **USB Cable** — Powers the Arduino and lets us upload code from the computer.
 
