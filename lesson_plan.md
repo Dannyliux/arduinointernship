@@ -34,7 +34,7 @@ See [materials.md](./materials.md) for the full list. Per station:
 
 | Item | Quantity |
 |------|----------|
-| Arduino Nano | 1 |
+| Arduino Nano **or** Arduino Uno | 1 |
 | Push Button | 1 |
 | LED (any color) | 1 |
 | Breadboard | 1 |
@@ -49,6 +49,7 @@ See [materials.md](./materials.md) for the full list. Per station:
 Before students arrive, make sure:
 
 - [ ] Arduino IDE is installed on every computer (see setup instructions below)
+- [ ] If using an Arduino: no CH340 driver needed - it is recognized automatically on Windows, Mac, and Linux
 - [ ] CH340 USB driver is installed on Windows machines
 - [ ] Each Arduino Nano has been tested with a blink sketch
 - [ ] All USB cables support data transfer (not charge-only)
@@ -97,6 +98,14 @@ Some Arduino Nano boards use a CH340 chip for USB communication. If Windows does
 3. Go to **Tools → Board** and select **Arduino Nano**
 4. Go to **Tools → Processor** and select **ATmega328P (Old Bootloader)** *(try this if uploads fail)*
 5. Go to **Tools → Port** and select the port that shows your Arduino (usually `COM3` on Windows or `/dev/cu.usbserial` on Mac)
+
+### Connecting the Arduino Uno
+
+1. Plug the Uno into the computer using a USB-B (square connector)
+2. Open the Arduino IDE
+3. Go to **Tools -> Board** and select **Arduino Uno**
+4. No processor selection is needed
+5. Go to **Tools -> Port** and select the port that shows your Arduino (usually 'COM3' on windows or `/dev/cu.usbserial` on Mac)
 
 ### Quick Test — Blink Sketch
 Let's make sure everything is working before we start:
@@ -152,6 +161,7 @@ Both projects use the exact same circuit. Students only wire it once.
 - LED connected to **Pin 3**
 - Push button connected to **Pin 2** (the other leg connects to GND)
 - All grounds connected to the GND pin on the Nano
+- **Note (Arduino Uno):** If using an Arduino Uno, the wiring is identical - Pin 2, Pin 3, and GND are in the same positions on both boards.
 
 > 📐 Refer to the wiring diagrams in [`resources/diagrams`](./resources/diagrams) for visual step-by-step instructions.
 
@@ -291,6 +301,8 @@ Thank students for participating. Remind them that everything they built today �
 | LED lights up when button is NOT pressed | Code logic inverted | Remember: LOW = pressed with INPUT_PULLUP |
 | Button doesn't seem to register | Loose wiring | Check all connections |
 | LED stays on constantly | Button wired incorrectly | Refer to the wiring diagram |
+| Upload fails (Nano only) | Old bootloader | Go to Tools → Processor → ATmega328P (Old Bootloader) |
+| Arduino Uno not recognized | Wrong USB cable | Use USB-B (square connector), not a charge-only cable |
 
 ---
 
