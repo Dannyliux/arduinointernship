@@ -4,7 +4,7 @@
 **Duration:** 2 Hours
 **Audience:** Students with no prior coding or electronics experience
 **Projects Covered:** Button Hold Mode & Toggle Mode
-**Prepared by:** Danny
+
 
 ---
 
