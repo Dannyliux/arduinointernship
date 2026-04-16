@@ -8,7 +8,7 @@ This document lists all the materials needed per student station to complete the
 
 | # | Item | Quantity | Notes |
 |---|------|----------|-------|
-| 1 | Arduino Nano | 1 | Any version works (Nano v3 recommended) |
+| 1 | Arduino Nano or Uno | 1 | Any version works (Nano v3 recommended) |
 | 2 | Push Button | 1 | Standard 4-leg tactile push button |
 | 3 | LED | 1 | Any color |
 | 4 | Breadboard | 1 | Mini breadboard recommended for classroom use |
