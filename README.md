@@ -60,7 +60,7 @@ Each student station requires:
 
 | Item | Quantity |
 |------|----------|
-| Arduino Nano | 1 |
+| Arduino Nano or Uno | 1 |
 | Push Button | 1 |
 | LED (any color) | 1 |
 | Breadboard | 1 |
