@@ -30,7 +30,8 @@ arduinointernship/
 │   └── toggle_mode/         → Project 2: Click the button → LED stays on. Click again → LED turns off
 ├── resources/
 │   ├── diagrams/            → Wiring diagrams for Arduino Nano and Uno
-│   └── images/              → Step-by-step setup photos
+│   ├── images/              → Step-by-step setup photos
+    └── slides/              → Slides containing information  
 ├── materials.md             → Full parts list per student station
 ├── lesson_plan.md           → Facilitator lesson plan (coming soon)
 └── README.md                → You are here
