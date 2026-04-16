@@ -10,7 +10,7 @@
 
 ## Overview
 
-In this workshop, students will be introduced to the Arduino Nano microcontroller. They will learn how to wire a simple circuit using an LED and a push button, and write code to control the LED in two different ways. No experience with coding or electronics is required — everything will be explained from scratch.
+In this workshop, students will be introduced to the Arduino Nano/Uno microcontroller. They will learn how to wire a simple circuit using an LED and a push button, and write code to control the LED in two different ways. No experience with coding or electronics is required — everything will be explained from scratch.
 
 ---
 
@@ -18,7 +18,7 @@ In this workshop, students will be introduced to the Arduino Nano microcontrolle
 
 By the end of this workshop, students will be able to:
 
-- Identify basic electronic components (Arduino Nano, LED, push button, jumper wires)
+- Identify basic electronic components (Arduino Nano/Uno, LED, push button, jumper wires)
 - Wire a simple circuit on a breadboard
 - Understand the difference between **input** and **output** on a microcontroller
 - Read a button state using `digitalRead()`
@@ -75,7 +75,7 @@ Before students arrive, make sure:
 ## Part 1 — Setting Up the Arduino IDE (15 min)
 
 ### What is the Arduino IDE?
-The Arduino IDE (Integrated Development Environment) is the free software we use to write code and send it to the Arduino. Think of it like a translator — you write instructions in a language called C++, and the IDE sends those instructions to the hardware.
+The Arduino IDE (Integrated Development Environment) is the free software we will use to write code and send it to the Arduino. Think of it like a translator — you write instructions in a language called C++, and the IDE sends those instructions to the hardware.
 
 ### Installation Steps
 
@@ -112,7 +112,7 @@ Let's make sure everything is working before we start:
 
 1. In the Arduino IDE, go to **File → Examples → 01.Basics → Blink**
 2. Click the **Upload** button (right arrow icon)
-3. If the built-in LED on the Nano starts blinking — success! Everything is connected correctly.
+3. If the built-in LED on the Nano starts blinking, everything is connected correctly.
 
 ---
 
