@@ -85,10 +85,10 @@ Each student station requires:
 
 ## Resources
 
-- 📐 [Wiring Diagrams](./resources/diagrams)
-- 🖼️ [Setup Images](./resources/images)
-- 📋 [Materials List](./materials.md)
-- 🗒️ [Lesson Plan](./lesson_plan.md)
+-  [Wiring Diagrams](./resources/diagrams)
+-  [Setup Images](./resources/images)
+-  [Materials List](./materials.md)
+-  [Lesson Plan](./lesson_plan.md)
 
 ---
 
