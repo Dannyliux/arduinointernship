@@ -69,7 +69,7 @@ Each student station requires:
 | Computer | 1 |
 | USB Cable | 1 |
 
-📄 [Full materials list with notes → materials.md](./materials.md)
+ [Full materials list with notes → materials.md](./materials.md)
 
 ---
 
