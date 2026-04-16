@@ -1,6 +1,6 @@
 # Arduino LED & Button Workshop
 
-An introductory Arduino workshop designed for students with no prior coding or electronics experience. Students will build a simple circuit and write code to control an LED using a push button — learning the fundamentals of input, output, and real-time hardware control.
+An introductory Arduino workshop designed for students with no prior coding or electronics experience. Students will build a simple circuit and write code to control an LED using a push button - learning the fundamentals of input, output, and real-time hardware control.
 
 **Workshop Duration:** ~2 Hours  
 **Skill Level:** Complete Beginner  
@@ -40,15 +40,15 @@ arduinointernship/
 
 ## Projects
 
-### Project 1 — Button Hold Mode
+### Project 1 - Button Hold Mode
 **Hold** the button → the LED lights up. **Let go** → the LED turns off. It responds in real time as long as you keep the button pressed. This project introduces `digitalRead()`, `digitalWrite()`, `INPUT_PULLUP`, and basic if/else logic.
 
 📁 [View Button Hold](./folders/button_hold)
 
 ---
 
-### Project 2 — Toggle Mode
-**Click** the button once → the LED turns on and **stays on**. **Click again** → it turns off. No holding required — the LED remembers its state between button presses. This project builds on Project 1 by introducing state tracking, edge detection, and debouncing.
+### Project 2 - Toggle Mode
+**Click** the button once → the LED turns on and **stays on**. **Click again** → it turns off. No holding required - the LED remembers its state between button presses. This project builds on Project 1 by introducing state tracking, edge detection, and debouncing.
 
 📁 [View Toggle Mode](./folders/toggle_mode)
 
@@ -87,8 +87,7 @@ Each student station requires:
 - 📐 [Wiring Diagrams](./resources/diagrams)
 - 🖼️ [Setup Images](./resources/images)
 - 📋 [Materials List](./materials.md)
-- 🗒️ Lesson Plan *(coming soon)*
+- 🗒️ [Lesson Plan](./lesson_plan.md)
 
 ---
 
-*Developed as part of the Yo Soy STEM Arduino Workshop Series.*
