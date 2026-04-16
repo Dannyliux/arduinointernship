@@ -10,7 +10,7 @@
 
 ## Overview
 
-In this workshop, students will be introduced to the Arduino Nano/Uno microcontroller. They will learn how to wire a simple circuit using an LED and a push button, and write code to control the LED in two different ways. No experience with coding or electronics is required — everything will be explained from scratch.
+In this workshop, students will be introduced to the Arduino Nano/Uno microcontroller. They will learn how to wire a simple circuit using an LED and a push button, and write code to control the LED in two different ways. No experience with coding or electronics is required—everything will be explained from scratch.
 
 ---
 
@@ -75,7 +75,7 @@ Before students arrive, make sure:
 ## Part 1 — Setting Up the Arduino IDE (15 min)
 
 ### What is the Arduino IDE?
-The Arduino IDE (Integrated Development Environment) is the free software we will use to write code and send it to the Arduino. Think of it like a translator — you write instructions in a language called C++, and the IDE sends those instructions to the hardware.
+The Arduino IDE (Integrated Development Environment) is the free software we will use to write code and send it to the Arduino. Think of it like a translator - you write instructions in a language called C++, and the IDE sends those instructions to the hardware.
 
 ### Installation Steps
 
@@ -103,9 +103,9 @@ Some Arduino Nano boards use a CH340 chip for USB communication. If Windows does
 
 1. Plug the Uno into the computer using a USB-B (square connector)
 2. Open the Arduino IDE
-3. Go to **Tools -> Board** and select **Arduino Uno**
+3. Go to **Tools → Board** and select **Arduino Uno**
 4. No processor selection is needed
-5. Go to **Tools -> Port** and select the port that shows your Arduino (usually 'COM3' on windows or `/dev/cu.usbserial` on Mac)
+5. Go to **Tools → Port** and select the port that shows your Arduino (usually 'COM3' on windows or `/dev/cu.usbserial` on Mac)
 
 ### Quick Test — Blink Sketch
 Let's make sure everything is working before we start:
@@ -123,12 +123,12 @@ An Arduino is a small computer that can read inputs (like a button being pressed
 
 ### Key Components
 
-- **Arduino Nano** — The brain. It reads inputs and controls outputs based on your code.
-- **LED** — Light Emitting Diode. It lights up when electricity flows through it in the correct direction. The **longer leg is positive (+)**.
-- **Push Button** — A switch. When pressed, it completes a circuit and sends a signal to the Arduino.
-- **Breadboard** — A board used to build circuits without soldering. Components plug into the holes.
-- **Jumper Wires** — Cables used to connect components together.
-- **USB Cable** — Powers the Arduino and lets us upload code from the computer.
+- **Arduino Nano** - The brain. It reads inputs and controls outputs based on your code.
+- **LED** - Light Emitting Diode. It lights up when electricity flows through it in the correct direction. The **longer leg is positive (+)**.
+- **Push Button** - A switch. When pressed, it completes a circuit and sends a signal to the Arduino.
+- **Breadboard** - A board used to build circuits without soldering. Components plug into the holes.
+- **Jumper Wires** - Cables used to connect components together.
+- **USB Cable** - Powers the Arduino and lets us upload code from the computer.
 
 ### How Arduino Code is Structured
 Every Arduino program (called a **sketch**) has two required sections:
@@ -148,8 +148,8 @@ void loop() {
 ### Inputs and Outputs (Pins)
 The holes along the sides of the Arduino Nano are called **pins**. Each pin can be configured as either:
 
-- **INPUT** — The pin reads a signal coming in (e.g., a button press)
-- **OUTPUT** — The pin sends a signal out (e.g., turning on an LED)
+- **INPUT** - The pin reads a signal coming in (e.g., a button press)
+- **OUTPUT** - The pin sends a signal out (e.g., turning on an LED)
 
 ---
 
@@ -166,13 +166,13 @@ Both projects use the exact same circuit. Students only wire it once.
 > 📐 Refer to the wiring diagrams in [`resources/diagrams`](./resources/diagrams) for visual step-by-step instructions.
 
 ### Important reminders:
-- The **longer leg of the LED is positive (+)** — it must face the correct direction or it won't light up
+- The **longer leg of the LED is positive (+)** - it must face the correct direction or it won't light up
 - Double-check all connections before plugging in the USB cable
 - If the LED doesn't light up, try flipping it
 
 ---
 
-## Part 4 — Project 1: Button Hold Mode (25 min)
+## Part 4 - Project 1: Button Hold Mode (25 min)
 
 ### Concept
 When you **hold** the button, the LED turns on. When you **let go**, it turns off. The LED only stays on as long as you keep the button pressed.
@@ -202,25 +202,25 @@ void loop() {
 
 ### Code Walkthrough
 
-- `int BUTTON_PIN = 2` — We give pin 2 a name so the code is easier to read
-- `INPUT_PULLUP` — Configures the button pin with an internal pull-up resistor. This keeps the pin at HIGH when the button isn't pressed, so readings are stable
-- `digitalRead(BUTTON_PIN)` — Reads whether the button is pressed or not
-- `digitalWrite(LED_PIN, HIGH/LOW)` — Turns the LED on or off
+- `int BUTTON_PIN = 2` - We give pin 2 a name so the code is easier to read
+- `INPUT_PULLUP` - Configures the button pin with an internal pull-up resistor. This keeps the pin at HIGH when the button isn't pressed, so readings are stable
+- `digitalRead(BUTTON_PIN)` - Reads whether the button is pressed or not
+- `digitalWrite(LED_PIN, HIGH/LOW)` - Turns the LED on or off
 - **Why is LOW = pressed?** Because `INPUT_PULLUP` keeps the pin HIGH by default. When you press the button, it connects the pin to ground and pulls it LOW
 
 ### Steps for Students
 1. Open the Arduino IDE
 2. Type in (or copy) the code above into a new sketch
 3. Click **Upload**
-4. Press and hold the button — the LED should turn on
-5. Let go — the LED should turn off
+4. Press and hold the button - the LED should turn on
+5. Let go - the LED should turn off
 
 ---
 
 ## Part 5 — Project 2: Toggle Mode (25 min)
 
 ### Concept
-**Click** the button once → the LED turns on and **stays on**. **Click again** → it turns off. The circuit is exactly the same as Project 1 — only the code changes.
+**Click** the button once → the LED turns on and **stays on**. **Click again** → it turns off. The circuit is exactly the same as Project 1 - only the code changes.
 
 ### The Code
 
@@ -251,14 +251,14 @@ void loop() {
 
 ### Code Walkthrough
 
-- `lastButtonState` — Remembers what the button was doing in the previous loop cycle
-- `bool ledState` — Tracks whether the LED is currently on or off (true/false)
-- `lastButtonState == HIGH && buttonState == LOW` — Detects the exact **moment** the button is pressed (transition from not-pressed to pressed), not the entire time it's held
-- `!ledState` — The `!` means "not". It flips the LED state: if it was on, it turns off; if it was off, it turns on
-- `delay(50)` — Waits 50 milliseconds to debounce the button
+- `lastButtonState` - Remembers what the button was doing in the previous loop cycle
+- `bool ledState` - Tracks whether the LED is currently on or off (true/false)
+- `lastButtonState == HIGH && buttonState == LOW` - Detects the exact **moment** the button is pressed (transition from not-pressed to pressed), not the entire time it's held
+- `!ledState` - The `!` means "not". It flips the LED state: if it was on, it turns off; if it was off, it turns on
+- `delay(50)` - Waits 50 milliseconds to debounce the button
 
 ### What is Debouncing?
-Physical buttons don't make a perfectly clean connection when pressed — they "bounce" and can register multiple presses in a split second. Adding a short `delay(50)` smooths this out so the Arduino only registers one press per click.
+Physical buttons don't make a perfectly clean connection when pressed - they "bounce" and can register multiple presses in a split second. Adding a short `delay(50)` smooths this out so the Arduino only registers one press per click.
 
 ### Steps for Students
 1. Keep the same circuit wired from Project 1
@@ -266,7 +266,7 @@ Physical buttons don't make a perfectly clean connection when pressed — they "
 3. Type in (or copy) the code above
 4. Click **Upload**
 5. Click the button once — the LED should turn on and stay on
-6. Click again — it should turn off
+6. Click again - it should turn off
 
 ---
 
@@ -286,7 +286,7 @@ Ask students to explain in their own words:
 - Can you add a second LED and make them take turns?
 
 ### Closing
-Thank students for participating. Remind them that everything they built today — reading inputs and controlling outputs — is the foundation of almost all electronics projects, from robots to smart home devices.
+Thank students for participating. Remind them that everything they built today - reading inputs and controlling outputs - is the foundation of almost all electronics projects, from robots to smart home devices.
 
 ---
 
