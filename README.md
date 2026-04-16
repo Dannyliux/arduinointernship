@@ -79,7 +79,7 @@ Each student station requires:
 2. Make sure the Arduino IDE is installed on each computer
 3. Follow the step-by-step wiring diagrams in [`resources/diagrams`](./resources/diagrams)
 4. Start with **Project 1 (Button Hold)** before moving to Project 2
-5. Use the lesson plan for timing and facilitation guidance *(coming soon)*
+5. Use the lesson plan for timing and facilitation guidance
 
 ---
 
